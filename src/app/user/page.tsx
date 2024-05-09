@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export async function loadedUsers() {
   const res = await axios.get("https://jsonplaceholder.typicode.com/users");
-    // await new Promise(resolve => setTimeout(resolve, 4000));
+    await new Promise(resolve => setTimeout(resolve, 4000));
 
   return res.data;
 }
